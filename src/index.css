@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@media print {
+  /* Cards */
+  .grid > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 2rem !important;
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+  
+  /* Text inside cards */
+  .grid > div h3,
+  .grid > div h4,
+  .grid > div h5,
+  .grid > div p,
+  .grid > div span,
+  .grid > div li {
+    color: black !important;
+  }
+  
+  /* Hide AI/Share buttons on cards */
+  .grid > div > div:last-child {
+    display: none !important;
+  }
+
+  /* Expandable section borders */
+  .grid > div .border-t {
+    border-color: #eee !important;
+  }
+  
+  /* Background inside cards */
+  .grid > div .bg-\[\#0B2430\] {
+    background-color: #f9f9f9 !important;
+    border: 1px solid #ccc !important;
+  }
+  
+  .bg-\[\#123244\] {
+    background-color: white !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+  
+  /* Banner adjustments */
+  .bg-\[\#123244\].border-l-4 {
+    border-left: 4px solid #E8A33D !important;
+  }
+  .bg-\[\#123244\] h3, .bg-\[\#123244\] p, .bg-\[\#123244\] span {
+    color: black !important;
+  }
+}
