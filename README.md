@@ -51,7 +51,7 @@ npm install
 # Start the development server
 npm run dev
 
-The app will be available at http://localhost:5173 (or whichever port your dev server prints).
+The app will be available at https://hushika-alert.vercel.app/
 
 No API key setup is required to view local alerts. Live "Regenerate with AI" calls require a valid Anthropic API key configured in your environment.
 
